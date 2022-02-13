@@ -2,7 +2,7 @@
 
 ## Minimus Users
 
-A simple "users" model for the minimus framework
+Implements simple "users" model for the Minimus framework.  Would also work with Bottle, etc. with minor reworking
 
 ### exposes:
 
