@@ -4,7 +4,7 @@
 
 A simple "users" model for the minimus framework
 
-###exposes:
+### exposes:
 
  **authenticate**(`username`, `password`) 
  
@@ -12,11 +12,11 @@ A simple "users" model for the minimus framework
    and checks if the password matches the hashed version in the database
    if it does, it returns **True**, not, it returns **False**
 
-**initialize**(datadir)
+**initialize**(`datadir`)
 
 - initializes the JSON database in a directory
 
-**get_user**(username, uid)
+**get_user**(`username`, `uid`)
 
 - returns a user record from a username
  or id.  On failure returns None
@@ -25,19 +25,19 @@ A simple "users" model for the minimus framework
 
 - returns a list of all users
 
-**delete_user**(username, uid)
+**delete_user**(`username`, `uid`)
 
 - returns a user if it deleted a user
      identified by username or uid
      
-**create_user**(username, password, `**kwargs`) 
+**create_user**(`username`, `password`, `**kwargs`) 
 
 - creates a user record
 username, password required -- the only validation is that username does not
 currently exist.  `**kwargs` are optional keyword arguments to include in the
 user record... for example is_active=True, display_name=John Doe
 
-**update_user**(username, `**kwargs`)
+**update_user**(`username`, `**kwargs`)
 
 - add additional keyword arguments
       to an existing record.  If a keyword argument value is EXPLICITLY set to None
