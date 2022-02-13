@@ -6,7 +6,7 @@ A simple "users" model for the minimus framework
 
 ###exposes:
 
- **authenticate**(username, password) 
+ **authenticate**(`username`, `password`) 
  
  - looks for an existing username
    and checks if the password matches the hashed version in the database
