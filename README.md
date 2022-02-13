@@ -51,16 +51,15 @@ user record... for example is_active=True, display_name=John Doe
 **render_login**(`login_filename=None`)
 
 - returns a login page as a string contained
-    login_file if `None`, then if loads module level file login.html
+    login_file if `None` or left blank, then if loads module level file login.html
     login_filename : string of filename of login page HTML document or None.
     
-If it is `None`, then the package level standard login.html is loaded. returns a string HTML of login page
     
 *NOTE: this is an experimental feature*
 
-**user_services()**
+**user_services**(`args`)
 
-- command line interface for user services such as:  --createuser, --deleteuser, --listuser, --updateuser
+- command line interface for user services such as:  --createuser, --deleteuser, --listuser, --updateuser.  You will usually pass `sys.args` to the function, but it is just an array of arguments.
 
 The programmer can easily extend this with an update_user
 
