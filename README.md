@@ -61,7 +61,6 @@ user record... for example is_active=True, display_name=John Doe
 
 - command line interface for user services such as:  --createuser, --deleteuser, --listuser, --updateuser.  You will usually pass `sys.args` to the function, but it is just an array of arguments.
 
-The programmer can easily extend this with an update_user
 
 ## Requires:
 
