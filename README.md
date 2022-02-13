@@ -4,7 +4,7 @@
 
 Implements simple "users" model for the Minimus framework.  Would also work with Bottle, etc. with minor reworking.  Requires use of an external database: either MongoDB or MontyDB.
 
-### Must REFACTOR db_client.py
+### !Must REFACTOR db_client.py!
 
 this will allow you to point at your database choice... either MontyDB or MongoDB
 
