@@ -29,10 +29,10 @@ this will allow you to point at your database choice... either MontyDB or MongoD
 
 - returns a list of all users
 
-**delete_user**(`username`, `uid`)
+**delete_user**(`username=None`, `uid=None`)
 
-- returns a user *if* it deleted a user
-     identified by username or uid
+- username or uid is required.  Returns a user *if* it deleted a user
+     identified by `username` or its `uid`
      
 **create_user**(`username`, `password`, `**kwargs`) 
 
