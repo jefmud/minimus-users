@@ -15,7 +15,7 @@ A simple "users" model for the minimus framework
 **initialize**(datadir)
 
 - initializes the JSON database in a directory
-- 
+
 **get_user**(username, uid)
 
 - returns a user record from a username
@@ -48,9 +48,10 @@ user record... for example is_active=True, display_name=John Doe
 
 render_login(login_filename=None) returns a login page as a string contained
     login_file if None, then if loads module level file login.html
-    : param {login_filename} : string of filename of login page HTML document or None.
+    login_filename : string of filename of login page HTML document or None.
+    
     If None, then the package level standard login.html is loaded.
-    : return : string HTML of login page
+    returns a string HTML of login page
     NOTE: this is an experimental feature
 
 **user_services()**
@@ -59,7 +60,7 @@ render_login(login_filename=None) returns a login page as a string contained
 
 The programmer can easily extend this with an update_user
 
-##Requires:
+## Requires:
 
   "Minimus" - you know what this is if you've stumbled upon this
   
