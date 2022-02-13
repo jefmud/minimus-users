@@ -50,7 +50,7 @@ user record... for example is_active=True, display_name=John Doe
 
 **render_login**(`login_filename=None`)
 
-    `render_login()` returns a login page as a string contained
+    - returns a login page as a string contained
     login_file if `None`, then if loads module level file login.html
     login_filename : string of filename of login page HTML document or None.
     
