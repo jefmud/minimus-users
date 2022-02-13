@@ -14,7 +14,7 @@ A simple "users" model for the minimus framework
 
 **initialize**(`datadir`)
 
-- initializes the JSON database in a directory
+- initializes the JSON database in a directory IFF you are using MontyDB
 
 **get_user**(`username`, `uid`)
 
@@ -27,12 +27,12 @@ A simple "users" model for the minimus framework
 
 **delete_user**(`username`, `uid`)
 
-- returns a user if it deleted a user
+- returns a user *if* it deleted a user
      identified by username or uid
      
 **create_user**(`username`, `password`, `**kwargs`) 
 
-- creates a user record
+- *creates a user record*
 username, password required -- the only validation is that username does not
 currently exist.  `**kwargs` are optional keyword arguments to include in the
 user record... for example is_active=True, display_name=John Doe
@@ -44,15 +44,16 @@ user record... for example is_active=True, display_name=John Doe
        the existing key/value will be removed.
        
 
-**render_login**()
+**render_login**(`login_filename=None`)
 
 render_login(login_filename=None) returns a login page as a string contained
-    login_file if None, then if loads module level file login.html
+    login_file if `None`, then if loads module level file login.html
     login_filename : string of filename of login page HTML document or None.
     
     If None, then the package level standard login.html is loaded.
     returns a string HTML of login page
-    NOTE: this is an experimental feature
+    
+*NOTE: this is an experimental feature*
 
 **user_services()**
 
