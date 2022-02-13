@@ -57,9 +57,9 @@ user record... for example is_active=True, display_name=John Doe
     
 *NOTE: this is an experimental feature*
 
-**user_services**(`args`)
+**user_services_cli**(`args`)
 
-- command line interface for user services such as:  --createuser, --deleteuser, --listuser, --updateuser.  You will usually pass `sys.args` to the function, but it is just an array of arguments.
+- command line interface for user services such as:  --createuser, --deleteuser, --listuser, --updateuser.  You will usually pass `sys.argv` to the function, but it is just an array of arguments.
 
 
 ## Requires:
